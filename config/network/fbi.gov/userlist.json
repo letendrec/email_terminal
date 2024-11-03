@@ -9,5 +9,18 @@
         "userId": "Serpico",
         "password": "Pa$$word",
         "userName": "Cornwell, Harley"
+    },
+
+    {
+        "userId": "mbloom",
+        "password": "AllAroundUs",
+        "userName": "Bloom, Marvin"
+    },
+
+    {
+        "userId": "slevinson",
+        "password": "password",
+        "userName": "Levinson, Sarah"
     }
+    
 ]

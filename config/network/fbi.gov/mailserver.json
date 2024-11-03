@@ -1,14 +1,23 @@
 [
     {
         "from": "admin",
-        "to": ["Serpico", "user"],
+        "to": ["Serpico", "user", "mbloom"],
         "title": "Maintenance in all servers",
         "body": "This message is for all divisions of the bureau.  Starting today, the servers may suffer instability due to the latest maintenance mesures.    admin"
     },
+
     {
-        "from": "Ross",
+        "from": "mbloom",
         "to": ["Serpico"],
         "title": "Info Request: Abigail Wright",
-        "body": "Here's what I could gather, files attached --Ross"
+        "body": "Here's what I could gather, files attached --Marcus"
+    },
+
+    {
+        "from": "slevinson",
+        "to": ["mbloom"],
+        "title": "Need your help",
+        "body": "Marvin, I have something you need to look at. Meet for coffee at the cafe later."
     }
+ 
 ]

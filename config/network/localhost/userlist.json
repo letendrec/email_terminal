@@ -6,9 +6,21 @@
     },
 
     {
-        "userId": "a",
-        "password": "a",
-        "userName": "Mulder, Fox"
+        "userId": "Salem",
+        "password": "DeepWater87",
+        "userName": "Kurtz, Darragh"
+    },
+
+    {
+        "userId": "Serpico",
+        "password": "Pa$$word",
+        "userName": "Cornwell, Harley"
+    },
+
+    {
+        "userId": "Sultan",
+        "password": "stetson",
+        "userName": "DuPont, Jack"
     },
 
     {
@@ -21,5 +33,11 @@
         "userId": "n",
         "password": "n",
         "userName": "debug"
+    },
+
+    {
+        "userId": "Marcus",
+        "password": "AllAroundUs",
+        "userName": "M-Cell Handler"
     }
 ]

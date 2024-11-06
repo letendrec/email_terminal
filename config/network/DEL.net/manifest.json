@@ -1,6 +1,6 @@
 {
-    "serverAddress": "fbi.gov",
-    "serverName": "Federal Bureau of Investigation",
-    "iconName": "fbi.png",
-    "terminalID": "fbi"
+    "serverAddress": "DEL.net",
+    "serverName": "Delta Green Intranet",
+    "iconName": "delta.png",
+    "terminalID": "delta"
 }

@@ -20,13 +20,7 @@ function rot13( s ) { // cf. https://en.wikipedia.org/wiki/ROT13
     return s.replace( /[a-zA-Z]/g, ( c ) => String.fromCharCode( ( c <= "Z" ? 90 : 122 ) >= ( c = c.charCodeAt( 0 ) + 13 ) ? c : c - 26 ) );
 }
 //adding new functions
-function vpn ( site ) {
-    if (site.length === 0 ) {
-        return "<p>A server needs to be specified</p>";
-    }
-    const connect =  args.join( " connecting....." ) ;
-    return `<p class="hack-reveal">${ connect }</p>`;
-}
+
 
 
 

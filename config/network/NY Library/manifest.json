@@ -1,6 +1,11 @@
 {
-    "serverAddress": "nypl.com",
+    "serverAddress": "nypl.org",
     "serverName": "The New York Public Library",
     "iconName": "NYLibrary.png",
-    "terminalID": "nypl"
+    "terminalID": "nypl",
+    "defaultUser": {
+        "userId": "user",
+        "password": "",
+        "userName": "visitor"
+    }
 }

@@ -1,14 +1,14 @@
 [
     {
         "from": "admin",
-        "to": ["Serpico", "user", "Marcus"],
+        "to": ["clechance"],
         "title": "Maintenance in all servers",
         "body": "This message is for all divisions of the bureau.  Starting today, the servers may suffer instability due to the latest maintenance mesures.    admin"
     },
     {
-        "from": "Marcus",
-        "to": ["Serpico"],
-        "title": "Info Request: Abigail Wright",
-        "body": "Here's what I could gather, files attached --Marcus"
+        "from": "Clarence",
+        "to": ["clechance"],
+        "title": "Tenant Status",
+        "body": "Get those bums out of MacAllister now. We're bleeding money."
     }
 ]

@@ -1,0 +1,16 @@
+[
+    {
+        "from": "Marcus",
+        "to": ["Serpico"],
+        "title": "Info Request: Abigail Wright",
+        "body": "Here's what I could gather, files attached --Marcus"
+    },
+
+    {
+        "from": "Salem",
+        "to": ["Sultan"],
+        "title": "Calling in a favor",
+        "body": "The doctor's been making threats. Could you take care of it?"
+    }
+ 
+]

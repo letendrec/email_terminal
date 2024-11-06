@@ -2,5 +2,10 @@
     "serverAddress": "ARTLIFE.com",
     "serverName": "ARTLIFE Collective",
     "iconName": "ARTLIFE.png",
-    "terminalID": "ARTLIFE"
+    "terminalID": "ARTLIFE",
+    "defaultUser": {
+        "userId": "user",
+        "password": "",
+        "userName": "visitor"
+    }
 }

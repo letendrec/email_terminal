@@ -1,5 +1,5 @@
 {
-    "serverAddress": "nypl.org",
+    "serverAddress": "nypl.com",
     "serverName": "The New York Public Library",
     "iconName": "NYLibrary.png",
     "terminalID": "nypl"

@@ -3,12 +3,13 @@
         "from": "admin",
         "to": ["clechance"],
         "title": "Maintenance in all servers",
-        "body": "This message is for all divisions of the bureau.  Starting today, the servers may suffer instability due to the latest maintenance mesures.    admin"
+        "body": "Hi everyone, we're going to be shutting down servers a little early today for maintenance. Save your work --Jeff"
     },
+
     {
-        "from": "Clarence",
+        "from": "Dominick",
         "to": ["clechance"],
         "title": "Tenant Status",
-        "body": "Get those bums out of MacAllister now. We're bleeding money."
+        "body": "Get those bums out of MacAllister now. We've been bleeding money for months now."
     }
 ]

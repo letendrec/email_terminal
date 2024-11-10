@@ -1,6 +1,5 @@
 [
     {
-        "to" : ["user"],
         "type": "Book",
         "title": "Libro Secretorum Manifesta",
         "author": "Unknown",

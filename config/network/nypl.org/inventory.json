@@ -2,6 +2,7 @@
     {
         "title": "Libro Secretorum Manifesta",
         "author": "Unkown",
-        "description": "A large red book written in Latin."
+        "description": "A large red book written in Latin.",
+        "availability": "available"
     }
 ]

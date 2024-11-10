@@ -463,7 +463,7 @@ system = {
     
     checkInventory() {
         return new Promise( ( resolve, reject ) => {
-            const inventory = inventoryList.filter( ( item ) => item.type.includes( "Book" ) )
+            const inventory = inventoryList.filter( ( item ) => item.type.includes( userDatabase.userId) )
                 .map( ( item, i ) => `[${ i }] ${ item.title }` );
             if ( inventory.length === 0 ) {
                 reject( new InventoryIsEmptyError() );

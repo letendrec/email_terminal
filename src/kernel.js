@@ -461,9 +461,10 @@ system = {
 
     //function to retun an inventory list, filtering by availability
     
-    checkInven() {
+    checkInventory() {
         return new Promise( ( resolve, reject ) => {
-            const inventory = inventoryList.map( ( item, i ) => `[${ i }] ${ item.title }` );
+            const inventory = inventoryList.filter( ( item ) => item.type.includes( "Book" ) )
+                .map( ( item, i ) => `[${ i }] ${ item.title }` );
             if ( inventory.length === 0 ) {
                 reject( new InventoryIsEmptyError() );
                 return;

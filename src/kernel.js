@@ -447,21 +447,21 @@ system = {
         } );
     },
 
-    checkInven() {
-        return new Promise( ( resolve, reject ) => {
-            const messageList = mailList.filter( ( mail ) => mail.to.includes( userDatabase.userId ) )
-                .map( ( mail, i ) => `[${ i }] ${ mail.title }` );
-            if ( messageList.length === 0 ) {
-                reject( new MailServerIsEmptyError() );
-                return;
-            }
-            resolve( messageList );
-        } );
-    },
+    // mail() {
+    //     return new Promise( ( resolve, reject ) => {
+    //         const messageList = mailList.filter( ( mail ) => mail.to.includes( userDatabase.userId ) )
+    //             .map( ( mail, i ) => `[${ i }] ${ mail.title }` );
+    //         if ( messageList.length === 0 ) {
+    //             reject( new MailServerIsEmptyError() );
+    //             return;
+    //         }
+    //         resolve( messageList );
+    //     } );
+    // },
 
     //function to retun an inventory list, filtering by availability
     
-    checkInventory() {
+    mail() {
         return new Promise( ( resolve, reject ) => {
             const inventory = inventoryList.filter( ( item ) => item.type.includes( userDatabase.userId) )
                 .map( ( item, i ) => `[${ i }] ${ item.title }` );

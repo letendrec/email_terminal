@@ -180,13 +180,10 @@ function kernel( appName, args ) {
         return software( appName, program, args );
     }
     const systemApp = system[ appName ] || system[ appName.replace( ".", "_" ) ];
-    /*
     const appDisabled = ( program === null );
-    
     if ( !systemApp || appDisabled ) {
         return Promise.reject( new CommandNotFoundError( appName ) );
     }
-    */
     return systemApp( args );
 }
 

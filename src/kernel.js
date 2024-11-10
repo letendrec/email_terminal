@@ -463,13 +463,12 @@ system = {
     
     checkInven() {
         return new Promise( ( resolve, reject ) => {
-            const Inventory = inventoryList.filter( ( item ) => item.availability.equals( "available" ) )
-                .map( ( item, i ) => `[${ i }] ${ item.title }` );
-            if ( Inventory.length === 0 ) {
+            const inventory = inventoryList.map( ( item, i ) => `[${ i }] ${ item.title }` );
+            if ( inventory.length === 0 ) {
                 reject( new InventoryIsEmptyError() );
                 return;
             }
-            resolve( availableInven );
+            resolve( inventory );
         } );
     },
     

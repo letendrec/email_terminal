@@ -58,6 +58,13 @@ class MailServerIsEmptyError extends FunctionalError {
     }
 }
 
+class InventoryIsEmptyError extends FunctionalError {
+    constructor() {
+        super();
+        this.message = "There are no items available.";
+    }
+}
+
 class InvalidMessageKeyError extends FunctionalError {
     constructor() {
         super();

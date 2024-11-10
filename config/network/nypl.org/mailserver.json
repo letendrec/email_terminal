@@ -4,5 +4,13 @@
         "to": ["user"],
         "title": "Annual Bake Sale",
         "body": "Our annual bake sale will be starting on Oct 12, make sure to grab something ot eat!"
+    },
+
+    {
+        "from": "The Library",
+        "to": ["user"],
+        "title": "Updated Donation Policy",
+        "body": "Donators will now need to provide an ID when donating books to the Library. This comes in response to several stolen books being donated."
     }
+
 ]

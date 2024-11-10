@@ -4,6 +4,7 @@ let serverDatabase = {};
 let userDatabase = {};
 let userList = [];
 let mailList = [];
+let inventoryList = [];
 let cmdLine_;
 let output_;
 let serverDate = { day: "", month: "", year: "", reference: "" };
@@ -188,7 +189,7 @@ function kernel( appName, args ) {
 
 /**
  * Attempts to connect to a server.
- * If successful, sets global variables serverDatabase / userDatabase / userList / mailList
+ * If successful, sets global variables serverDatabase / userDatabase / userList / mailList /inventoryList
  */
 kernel.connectToServer = function connectToServer( serverAddress, userName, passwd ) {
     return new Promise( ( resolve, reject ) => {
@@ -205,6 +206,9 @@ kernel.connectToServer = function connectToServer( serverAddress, userName, pass
                 } );
                 $.get( `config/network/${ serverInfo.serverAddress }/mailserver.json`, ( mails ) => {
                     mailList = mails;
+                } );
+                $.get( `config/network/${ serverInfo.serverAddress }/inventory.json`, ( items ) => {
+                    inventoryList = items;
                 } );
                 setHeader( "Connection successful" );
                 resolve();
@@ -224,6 +228,9 @@ kernel.connectToServer = function connectToServer( serverAddress, userName, pass
                     userList = users;
                     $.get( `config/network/${ serverInfo.serverAddress }/mailserver.json`, ( mails ) => {
                         mailList = mails;
+                    } );
+                    $.get( `config/network/${ serverInfo.serverAddress }/inventory.json`, ( items ) => {
+                        inventoryList = items;
                     } );
                     setHeader( "Connection successful" );
                     resolve();
@@ -452,6 +459,20 @@ system = {
         } );
     },
 
+    //function to retun an inventory list, filtering by availability
+    
+    checkInven() {
+        return new Promise( ( resolve, reject ) => {
+            const availableInven = inventoryList.filter( ( items ) => items.availability.equals( "available" ) )
+                .map( ( item, i ) => `[${ i }] ${ item.title }` );
+            if ( availableInven.length === 0 ) {
+                reject( new InventoryIsEmptyError() );
+                return;
+            }
+            resolve( availableInven );
+        } );
+    },
+    
     read( args ) {
         return new Promise( ( resolve, reject ) => {
             const mailIndex = Number( args[ 0 ] );

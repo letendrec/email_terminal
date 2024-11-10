@@ -463,9 +463,9 @@ system = {
     
     checkInven() {
         return new Promise( ( resolve, reject ) => {
-            const availableInven = inventoryList.filter( ( items ) => items.availability.equals( "available" ) )
+            const Inventory = inventoryList.filter( ( items ) => items.availability.equals( "available" ) )
                 .map( ( item, i ) => `[${ i }] ${ item.title }` );
-            if ( availableInven.length === 0 ) {
+            if ( Inventory.length === 0 ) {
                 reject( new InventoryIsEmptyError() );
                 return;
             }

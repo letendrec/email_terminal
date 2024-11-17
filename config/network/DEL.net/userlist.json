@@ -1,32 +1,25 @@
 [
     {
-        "userId": "8A73B5",
-        "password": "trustno1",
-        "userName": "Mulder, Fox"
-    },
-
-    {
         "userId": "Serpico",
         "password": "Pa$$word",
-        "userName": "Cornwell, Harley"
+        "userName": "Agent Serpico"
     },
 
     {
         "userId": "Marcus",
         "password": "AllAroundUs",
-        "userName": "Bloom, Marvin"
+        "userName": "Agent Marcus"
     },
 
     {
         "userId": "Sultan",
         "password": "password",
-        "userName": "DuPont, Jack"
+        "userName": "Agent Sultan"
     },
 
     {
         "userId": "Salem",
         "password": "MyLungs4TheWorld",
-        "userName": "Kurtz, Darragh"
+        "userName": "Agent Salem"
     }
-    
 ]

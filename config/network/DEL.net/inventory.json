@@ -1,0 +1,18 @@
+[
+    {
+        "type": "Firearm, Rifle",
+        "title": "M14",
+        "author": "Springfield",
+        "description": "7.62x51mm semi-auto rifel, 10 round magazine",
+        "availability": "available"
+    },
+
+    {
+        "type": "Computer",
+        "title": "CF-41",
+        "author": "Panasonic",
+        "description": "Rugged laptop with a dual CD-ROM drive",
+        "availability": "available"
+    }
+
+]

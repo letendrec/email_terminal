@@ -447,20 +447,21 @@ system = {
         } );
     },
 
-    // mail() {
-    //     return new Promise( ( resolve, reject ) => {
-    //         const messageList = mailList.filter( ( mail ) => mail.to.includes( userDatabase.userId ) )
-    //             .map( ( mail, i ) => `[${ i }] ${ mail.title }` );
-    //         if ( messageList.length === 0 ) {
-    //             reject( new MailServerIsEmptyError() );
-    //             return;
-    //         }
-    //         resolve( messageList );
-    //     } );
-    // },
+    mail2() {
+        return new Promise( ( resolve, reject ) => {
+            const messageList = mailList.filter( ( mail ) => mail.to.includes( userDatabase.userId ) )
+                .map( ( mail, i ) => `[${ i }] ${ mail.title }` );
+            if ( messageList.length === 0 ) {
+                reject( new MailServerIsEmptyError() );
+                return;
+            }
+            resolve( messageList );
+        } );
+    },
 
     //function to retun an inventory list, filtering by availability
-    
+    //does not work with name "inventory", named mail it works
+
     mail() {
         return new Promise( ( resolve, reject ) => {
             const inventory = inventoryList.map( ( item, i ) => `[${ i }] ${ item.title }` );

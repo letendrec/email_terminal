@@ -460,8 +460,6 @@ system = {
     },
 
     //function to retun an inventory list, filtering by availability
-    //does not work with name "inventory", named mail it works
-
     inventory() {
         return new Promise( ( resolve, reject ) => {
             const inven = inventoryList.map( ( item, i ) => `[${ i }] ${ item.title }` );
@@ -471,6 +469,26 @@ system = {
             }
             resolve( inven );
         } );
+    },
+
+    inspect(args){
+        return new Promise((resolve, reject) => {
+            const invenIndex = Number(args[0]);
+            const itemAtIndex = inventoryList[invenIndex];
+            if(!itemAtIndex){
+                reject (new InvalidMessageKeyError());
+                return;
+            }
+            let description = [];
+            description.push("---------------------------------------------");
+            description.push(`Category: ${itemAtIndex.type}`);
+            description.push(`Item: ${itemAtIndex.title}`);
+            description.push(`By: ${itemAtIndex.author}`);
+            description.push(`Description: ${itemAtIndex.description}`);
+            description.push(`Status: ${itemAtIndex.availability}`);
+            description.push("---------------------------------------------");
+            resolve(description);
+        });
     },
     
     read( args ) {

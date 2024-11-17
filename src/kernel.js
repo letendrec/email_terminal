@@ -447,7 +447,7 @@ system = {
         } );
     },
 
-    mail2() {
+    mail() {
         return new Promise( ( resolve, reject ) => {
             const messageList = mailList.filter( ( mail ) => mail.to.includes( userDatabase.userId ) )
                 .map( ( mail, i ) => `[${ i }] ${ mail.title }` );
@@ -462,14 +462,14 @@ system = {
     //function to retun an inventory list, filtering by availability
     //does not work with name "inventory", named mail it works
 
-    mail() {
+    inventory() {
         return new Promise( ( resolve, reject ) => {
-            const inventory = inventoryList.map( ( item, i ) => `[${ i }] ${ item.title }` );
-            if ( inventory.length === 0 ) {
+            const inven = inventoryList.map( ( item, i ) => `[${ i }] ${ item.title }` );
+            if ( inven.length === 0 ) {
                 reject( new InventoryIsEmptyError() );
                 return;
             }
-            resolve( inventory );
+            resolve( inven );
         } );
     },
     

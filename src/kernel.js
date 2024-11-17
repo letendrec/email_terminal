@@ -471,6 +471,7 @@ system = {
         } );
     },
 
+    //displays details of an inventory object
     inspect(args){
         return new Promise((resolve, reject) => {
             const invenIndex = Number(args[0]);

@@ -5,5 +5,29 @@
         "author": "Unknown",
         "description": "A large red book written in Latin.",
         "availability": "available"
+    },
+
+    {
+        "type": "Book",
+        "title": "The Apocalypse Watch",
+        "author": "Robert Ludlum",
+        "description": "A book about tracking a Neo-Nazi movement in North America and Europe that tragets politicians.",
+        "availability": "unavailable"
+    },
+
+    {
+        "type": "VHS",
+        "title": "In The Mouth of Madness",
+        "author": "John Carpenter",
+        "description": "An insurance investigator begins discovering that the impact a horror writer's books have on his fans is more than inspirational.",
+        "availability": "available"
+    },
+
+    {
+        "type": "Book",
+        "title": "The Maker of Moons",
+        "author": "Robert W. Chambrers",
+        "description": "A collection of strange tales",
+        "availability": "unavailable"
     }
 ]
